@@ -1,4 +1,6 @@
-#include "DHT.h"
+#include <DHT_U.h>
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
 #include <Event.h>
 #include "Timer.h"
 #include <ESP8266WiFi.h>
@@ -8,33 +10,26 @@
 //========     SETUP DHT Sensor    ========//
 #define DHTPIN D2
 #define DHTTYPE DHT22
-DHT dht(DHTPIN,DHTTYPE);
-
-//========    SETUP OutputPins     ========//
-#define USONICPIN D0
-#define FANPIN D1
-#define WATERPIN D3
+DHT dht(DHTPIN, DHTTYPE);
 
 //========       SETUP TIMER       ========//
 Timer sensorTimer;
-const int sensorIntervall = 3; // in seconds
+const int sensorIntervall = 5; // in seconds
 Timer wifiTimer;
-const int wifiIntervall = 60; // in seconds
+const int wifiIntervall = 5; // in seconds
 
 //========   SETUP Messvariablen   ========//
-const float upHumTreshold = 0.8;
-const float downHumTreshold = 0.1;
 const int anzMess = 5;
 float messHumArray[anzMess];
 float messTempArray[anzMess];
-float hum; // durchschnitt
-float temp;
 int userhum = 70; //default value, can be changed on app
 
 //========   SETUP Wifi            ========//
 const char* ssid = "BumeSpot";
 const char* password = "tschussi95";
 const char* host = "http://web304.126.hosttech.eu";
+
+
 
 
 void setup()
@@ -74,57 +69,24 @@ void connectWifi() {
 }
 
 void readSensor() {
-	for (int i = 0; i < anzMess-1; i++) {
+	for (int i = 0; i < anzMess - 1; i++) {
 		messHumArray[i + 1] = messHumArray[i];
 		messTempArray[i + 1] = messTempArray[i];
 	}
 	messHumArray[0] = dht.readHumidity();
 	messTempArray[0] = dht.readTemperature();
-
-	evaluateSituation();
 }
 
-void evaluateSituation() {
-	// Durchschnitt berechnen
-	hum = 0;
-	temp = 0;
+void sendValue() {
+	float hum;
+	float temp;
+
 	for (int i = 0; i < anzMess; i++) {
 		hum += messHumArray[i];
 		temp += messTempArray[i];
 	}
 	hum = hum / anzMess;
 	temp = temp / anzMess;
-
-/*	S.println();
-	S.print("*Hum:\t");
-	S.println(hum);
-	S.print("*Temp:\t");
-	S.println(temp); */
-
-	bool USONICState = 0;
-	bool FANState = 0;
-
-	if (hum < userhum) {
-		S.println("ich muen heize!!");
-		USONICState = 1;
-		FANState = 1;
-	}
-	else if (hum > userhum + upHumTreshold) {
-		S.println("ich bin z fueecht");
-		USONICState = 0;
-		FANState = 1;
-	}
-	else {
-		USONICState = 0;
-		FANState = 0;
-	}
-
-	digitalWrite(USONICPIN, USONICState);
-	digitalWrite(FANPIN, FANState);
-
-}
-
-void sendValue() {
 
 	Serial.print("connecting to ");
 	Serial.println(host);
@@ -136,18 +98,17 @@ void sendValue() {
 		Serial.println("connection failed");
 		return;
 	}
-	int humTemp = (int(hum + 0.5));
-	int tempTemp = (int(temp +0.5));
 
+	// We now create a URI for the request
 	String url = "http://web304.126.hosttech.eu/arduino/humi/send.php?android=";
-	url += humTemp;
+	url += hum;
 	url += ",";
-	url += tempTemp;
+	url += temp;
 	url += ",";
 	url += 0;
 	url += ",";
 
-	//Serial.print("Requesting URL: ");
+	Serial.print("Requesting URL: ");
 	Serial.println(url);
 
 	// This will send the request to the server

@@ -33,7 +33,10 @@ C:\Users\Michi\AppData\Local\Temp\VMicroBuilds\Humidor_Node\esp8266_nodemcuv2\Hu
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/debug.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/pins_arduino.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/../generic/common.h \
- C:\Users\Michi\Documents\Arduino\libraries\DHT_sensor_library/DHT.h \
+ C:\Users\Michi\Documents\Arduino\libraries\DHT-sensor-library-master/DHT_U.h \
+ C:\Users\Michi\Documents\Arduino\libraries\Adafruit_Sensor-master/Adafruit_Sensor.h \
+ C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Print.h \
+ C:\Users\Michi\Documents\Arduino\libraries\DHT-sensor-library-master/DHT.h \
  C:\Users\Michi\Documents\Arduino\libraries\Timer-master/Event.h \
  C:\Users\Michi\Documents\Arduino\libraries\Timer-master/Timer.h \
  C:\Users\Michi\Documents\Arduino\libraries\Timer-master/Event.h \
@@ -48,7 +51,6 @@ C:\Users\Michi\AppData\Local\Temp\VMicroBuilds\Humidor_Node\esp8266_nodemcuv2\Hu
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/ESP8266WiFiAP.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/ESP8266WiFiScan.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/WiFiClient.h \
- C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Print.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Client.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/IPAddress.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/slist.h \
