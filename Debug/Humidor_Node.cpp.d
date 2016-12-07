@@ -1,5 +1,5 @@
-C:\Users\Michi\AppData\Local\Temp\VMicroBuilds\Humidor_Node\esp8266_nodemcuv2\Humidor_Node.cpp.o: \
- C:\Users\Michi\AppData\Local\Temp\VMicroBuilds\Humidor_Node\esp8266_nodemcuv2\Humidor_Node.cpp \
+C:\Users\Michi\AppData\Local\Temp\VMBuilds\Humidor_Node\esp8266_nodemcuv2\Humidor_Node.cpp.o: \
+ C:\Users\Michi\AppData\Local\Temp\VMBuilds\Humidor_Node\esp8266_nodemcuv2\Humidor_Node.cpp \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/arduino.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/stdlib_noniso.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/binary.h \
@@ -33,10 +33,7 @@ C:\Users\Michi\AppData\Local\Temp\VMicroBuilds\Humidor_Node\esp8266_nodemcuv2\Hu
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/debug.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/pins_arduino.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/../generic/common.h \
- C:\Users\Michi\Documents\Arduino\libraries\DHT-sensor-library-master/DHT_U.h \
- C:\Users\Michi\Documents\Arduino\libraries\Adafruit_Sensor-master/Adafruit_Sensor.h \
- C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Print.h \
- C:\Users\Michi\Documents\Arduino\libraries\DHT-sensor-library-master/DHT.h \
+ C:\Users\Michi\Documents\Arduino\libraries\DHT_sensor_library/DHT.h \
  C:\Users\Michi\Documents\Arduino\libraries\Timer-master/Event.h \
  C:\Users\Michi\Documents\Arduino\libraries\Timer-master/Timer.h \
  C:\Users\Michi\Documents\Arduino\libraries\Timer-master/Event.h \
@@ -51,6 +48,7 @@ C:\Users\Michi\AppData\Local\Temp\VMicroBuilds\Humidor_Node\esp8266_nodemcuv2\Hu
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/ESP8266WiFiAP.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/ESP8266WiFiScan.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/WiFiClient.h \
+ C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Print.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Client.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/IPAddress.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/slist.h \
@@ -58,4 +56,4 @@ C:\Users\Michi\AppData\Local\Temp\VMicroBuilds\Humidor_Node\esp8266_nodemcuv2\Hu
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Server.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/WiFiClientSecure.h \
  C:\Users\Michi\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/ssl.h \
- C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\ 14.0\Common7\IDE\Extensions\105o0khe.zhj\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h
+ C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\ 14.0\Common7\IDE\Extensions\5oasuf0j.vnv\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h

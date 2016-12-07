@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Humidor_Node", "Humidor_Nod
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WiFiClient", "..\..\Arduino\My Examples\WiFiClient\WiFiClient.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Serial", "..\..\Arduino\My Examples\Serial\Serial.vcxproj", "{D5D102C0-FA7A-4ADE-AEA4-C330B410793E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DHTtester", "..\..\Arduino\My Examples\DHTtester\DHTtester.vcxproj", "{87690F4D-4184-4EF7-9B38-E17DA214703F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,6 +25,14 @@ Global
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
+		{D5D102C0-FA7A-4ADE-AEA4-C330B410793E}.Debug|x86.ActiveCfg = Debug|Win32
+		{D5D102C0-FA7A-4ADE-AEA4-C330B410793E}.Debug|x86.Build.0 = Debug|Win32
+		{D5D102C0-FA7A-4ADE-AEA4-C330B410793E}.Release|x86.ActiveCfg = Release|Win32
+		{D5D102C0-FA7A-4ADE-AEA4-C330B410793E}.Release|x86.Build.0 = Release|Win32
+		{87690F4D-4184-4EF7-9B38-E17DA214703F}.Debug|x86.ActiveCfg = Debug|Win32
+		{87690F4D-4184-4EF7-9B38-E17DA214703F}.Debug|x86.Build.0 = Debug|Win32
+		{87690F4D-4184-4EF7-9B38-E17DA214703F}.Release|x86.ActiveCfg = Release|Win32
+		{87690F4D-4184-4EF7-9B38-E17DA214703F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
