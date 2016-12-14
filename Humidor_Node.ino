@@ -16,16 +16,18 @@ DHT dht(DHTPIN, DHTTYPE);
 #define WATERPIN D3
 #define LIGHTPIN D6
 #define IRPIN D5
+#define LIGHTSW1 D7
+#define LIGHTSW2 D8
 bool IRPreState = 0;
 
 //========       SETUP TIMER       ========//
 Timer sensorTimer;
 const int sensorIntervall = 3; // in seconds
 Timer wifiTimer;
-const int wifiIntervall = 20; // in seconds
+const int wifiIntervall = 30; // in seconds (minimum 5* sensorIntervall
 Timer lightTimer;
 const int lightSmoothness = 2000; // in milli seconds
-const int lightOffTime = 5; //in seconds
+const int lightOffTime = 15; //in seconds
 bool lightChangeable = true;
 							  
 //========   SETUP Messvariablen   ========//
@@ -231,12 +233,20 @@ void loop()
 // --- END UPDATE TIMER --- //
 
 // --- CHECK LIGHTSITUATION --- //
-	if (digitalRead(IRPIN) & !IRPreState & lightChangeable) {
-		smoothLightIn();
-		lightTimer.after(lightOffTime*1000, smoothLightOut);
-		lightChangeable = false;
+	if (digitalRead(LIGHTSW1)) { //AUTOMODE
+		if (digitalRead(IRPIN) & !IRPreState & lightChangeable) {
+			smoothLightIn();
+			lightTimer.after(lightOffTime * 1000, smoothLightOut);
+			lightChangeable = false;
+		}
+		IRPreState = digitalRead(IRPIN);
 	}
-	IRPreState = digitalRead(IRPIN);
+	else if (digitalRead(LIGHTSW2)) { // ALWAYS ON
+		digitalWrite(LIGHTPIN, 1);
+	}
+	else {	//ALSWAYS OFF
+		digitalWrite(LIGHTPIN,0);
+	}
 // --- END LIGHTSITUATION --- //
 
 	delay(100);

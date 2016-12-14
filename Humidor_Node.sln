@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Serial", "..\..\Arduino\My 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DHTtester", "..\..\Arduino\My Examples\DHTtester\DHTtester.vcxproj", "{87690F4D-4184-4EF7-9B38-E17DA214703F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testNextion", "..\..\Arduino\testNextion\testNextion.vcxproj", "{8E0D9689-6BB8-4BB5-B054-2EF4DC9DEAB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -33,6 +35,10 @@ Global
 		{87690F4D-4184-4EF7-9B38-E17DA214703F}.Debug|x86.Build.0 = Debug|Win32
 		{87690F4D-4184-4EF7-9B38-E17DA214703F}.Release|x86.ActiveCfg = Release|Win32
 		{87690F4D-4184-4EF7-9B38-E17DA214703F}.Release|x86.Build.0 = Release|Win32
+		{8E0D9689-6BB8-4BB5-B054-2EF4DC9DEAB2}.Debug|x86.ActiveCfg = Debug|Win32
+		{8E0D9689-6BB8-4BB5-B054-2EF4DC9DEAB2}.Debug|x86.Build.0 = Debug|Win32
+		{8E0D9689-6BB8-4BB5-B054-2EF4DC9DEAB2}.Release|x86.ActiveCfg = Release|Win32
+		{8E0D9689-6BB8-4BB5-B054-2EF4DC9DEAB2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
